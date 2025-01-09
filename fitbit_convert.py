@@ -344,7 +344,8 @@ if __name__ == "__main__":
         default=date.today())
     parser.add_argument("-v", "--verbosity",
         action="count",
-        help="increase output verbosity")
+        help="increase output verbosity",
+        default=0)
     parser.add_argument("-l","--logfile",
         metavar="<filename.log>",
         help="Log to file instead, implies single verbosity level (INFO)")
